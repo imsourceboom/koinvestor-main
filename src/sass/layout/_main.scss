@@ -1,18 +1,28 @@
 main {
     position: relative;
-    flex: 1;
-    width: 100%;
+
+    @import './header';
+
+    &>section {
+        height: 100vh;
+        margin-top: -50px;
+        border: 1px solid red;
+        overflow: hidden;
+
+        @media(min-width: 768px) {
+            margin-top: -60px;
+        }
+
+        &>article.container {
+            height: 100%;
+            padding: 1rem;
+        }
+    }
 
     h1 {
         @include centered;
         font-family: 'Oswald';
         font-weight: 500;
         font-size: 70px;
-    }
-
-    div {
-        height: 450px;
-        background-color: blanchedalmond;
-        margin: 1rem;
     }
 }

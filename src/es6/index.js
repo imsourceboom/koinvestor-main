@@ -1,4 +1,5 @@
-// import './elements';
-import { header } from './elements';
-
-console.log(header.self);
+import './polyfill';
+import './typed';
+import './smoothscroll';
+import './scrollreveal';
+import './hamburger';

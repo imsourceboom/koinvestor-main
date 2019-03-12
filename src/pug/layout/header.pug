@@ -1,11 +1,41 @@
 header
     div.container
         figure
-            a(href="/index.html")
-                img(src="/assets/sample-logo.png" alt="sample logo")
+            a(href="#")
+                img(src="/assets/koinvestor_symbol.svg" alt="koinvestor logo")
         nav
             ul
-                -   var menu = ['about', 'portfolio', 'contents','newpage']
+                -
+                    var menu = [
+                        {
+                            name:'ABOUT',
+                            id: 'about'
+                        },
+                        {
+                            name: 'SERVICES',
+                            id:'services'
+                        },
+                        {
+                            name:'TEAM',
+                            id:'team'
+                            
+                        },
+                        {
+                            name:'PORTFOLIO',
+                            id:'portfolio'
+                        },
+                        {
+                            name:'PARTNERS',
+                            id:'partners'
+                        },
+                        {
+                            name:'CONTACT US',
+                            id:'contact'
+                        }
+                    ]
                 each m in menu
                     li
-                        a(href=`/html/${m}.html`)= m
+                        a(href=`#${m.id}` data-scroll)= m.name
+        .hamburger.hamburger--squeeze.js-hamburger
+            .hamburger-box
+                .hamburger-inner
