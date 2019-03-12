@@ -5,10 +5,13 @@ import {
 
 const typedOne = intro.typeOne;
 
-new Typed(typedOne, {
-    strings: ['Wellcome to KOINVESTOR'],
-    typeSpeed: 50,
-    startDelay: 1000,
-    showCursor: false,
-    loop: true
+
+window.addEventListener('DOMContentLoaded', () => {
+    new Typed(typedOne, {
+        strings: ['Wellcome to KOINVESTOR'],
+        typeSpeed: 50,
+        startDelay: 1500,
+        showCursor: false,
+        loop: true
+    })
 })
