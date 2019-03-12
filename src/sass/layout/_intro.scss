@@ -1,11 +1,9 @@
-article.intro {
-    position: relative;
+article.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
 
     &>.video {
         position: absolute;
@@ -22,11 +20,26 @@ article.intro {
             object-fit: cover;
         }
     }
+}
+
+article.intro {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
 
     & .type-one,
     & .type-two,
     & .type-three {
         position: relative;
         z-index: 1;
+        font-size: 1.5rem;
+
+        @media (min-width: 768) {
+            font-size: 3rem;
+        }
     }
 }

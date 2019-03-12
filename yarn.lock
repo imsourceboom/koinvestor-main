@@ -6116,6 +6116,11 @@ stdout-stream@^1.4.0:
   dependencies:
     readable-stream "^2.0.1"
 
+stickybits@^3.6.4:
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/stickybits/-/stickybits-3.6.4.tgz#cfa5fc05d503550dbbe44e27f340075840b531e7"
+  integrity sha512-MkaxlFLPu4Zdzq3W3suPT3PYPk8QaPRsVyISAVC1wwqraYrJ+2HaJ64c5YqsVWC9DcKs0zQLcpivfQAk0G9b2Q==
+
 stream-browserify@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/stream-browserify/-/stream-browserify-2.0.1.tgz#66266ee5f9bdb9940a4e4514cafb43bb71e5c9db"
