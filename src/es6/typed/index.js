@@ -8,7 +8,7 @@ const typedOne = intro.typeOne;
 
 window.addEventListener('DOMContentLoaded', () => {
     new Typed(typedOne, {
-        strings: ['Wellcome to KOINVESTOR'],
+        strings: ['Welcome to KOINVESTOR'],
         typeSpeed: 50,
         startDelay: 1500,
         showCursor: false,
