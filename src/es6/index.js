@@ -4,3 +4,4 @@ import './typed';
 import './smoothscroll';
 import './scrollreveal';
 import './hamburger';
+import './swiper'
