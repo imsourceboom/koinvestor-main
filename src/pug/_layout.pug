@@ -1,27 +1,28 @@
 doctype html
 html(lang="en")
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
-    meta(name="title", content="Koinvestor")
-    meta(name="description", content="korea investor venture capital")
-    meta(name="keywords", content="koinvestor, blockchain, korea investor, korea, investor, vc, venture capital")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="format-detaction", content="telephone=no, address=no, email=no")
-    meta(name="apple-mobile-web-app-capable", content="yes")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+        meta(name="title", content="Koinvestor")
+        meta(name="description", content="korea investor venture capital")
+        meta(name="keywords", content="koinvestor, blockchain, korea investor, korea, investor, vc, venture capital")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="format-detaction", content="telephone=no, address=no, email=no")
+        meta(name="apple-mobile-web-app-capable", content="yes")
 
-    title KOINVESTOR
-    link(rel="stylesheet", href="/css/main.css")
+        title KOINVESTOR
+        link(rel="stylesheet", href="/css/main.css")
 
-body
+    body
 
-    include layout/intro
+        include layout/intro
 
-    //- include layout/header
+        //- include layout/header
 
-    main
-        block main
+        main
+            block main
 
-    include layout/footer
+        include layout/footer
 
-    block javascript
-        script(src="/js/app.js")
+        block javascript
+            script(src="/js/app.js")
