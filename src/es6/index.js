@@ -1,6 +1,6 @@
 import './polyfill';
 import './sticky';
-import './typed';
+// import './typed';
 import './smoothscroll';
 import './scrollreveal';
 import './hamburger';

@@ -38,7 +38,8 @@ article.bg {
 article.intro {
     position: relative;
     z-index: 1;
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,17 +50,37 @@ article.intro {
     & .type-two,
     & .type-three {
         position: relative;
+        z-index: 1;
         font-size: 1.5rem;
-        color: rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, .3);
+        animation: pulse 1.5s infinite alternate;
 
-        @media (min-width: 768) {
-            font-size: 3rem;
+        @media (min-width: 768px) {
+            font-size: 1.75rem;
+        }
+
+        @media (min-width: 1366px) {
+            font-size: 2rem;
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.05);
+                color: rgba(255, 255, 255, .8);
+            }
         }
     }
 
     & a.bottom-button {
         position: absolute;
+        z-index: 2;
         bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
         width: 60px;
         height: 60px;
 
