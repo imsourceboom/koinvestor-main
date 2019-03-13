@@ -10,7 +10,6 @@ main {
         z-index: 1;
         min-height: 100vh;
         margin-top: -50px;
-        overflow: hidden;
 
         @media(min-width: 768px) {
             margin-top: -60px;
@@ -20,12 +19,5 @@ main {
             height: 100%;
             padding: 1rem;
         }
-    }
-
-    h1 {
-        @include centered;
-        font-family: 'Oswald';
-        font-weight: 500;
-        font-size: 70px;
     }
 }
