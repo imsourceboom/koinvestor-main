@@ -1,6 +1,6 @@
 import ScrollReveal from 'scrollreveal';
 
-window.sr = ScrollReveal({
+window.sr = new ScrollReveal({
     reset: true,
     distance: '30px'
 });
@@ -8,8 +8,6 @@ window.sr = ScrollReveal({
 sr.reveal('main > section', {
     duration: 1000,
 });
-
-
 
 /* 
     Heaer 영역  
@@ -36,3 +34,16 @@ for (var i = 100; i < 1000; i += 100) {
         reset: false
     });
 }
+
+const add = (el) => {
+    el.classList.add('active')
+}
+const remove = (el) => {
+    el.classList.remove('active')
+}
+sr.reveal('figure.cube > img', {
+    // afterReset: myCallback,
+    // afterReveal: myCallback,
+    beforeReset: remove,
+    beforeReveal: add
+})
