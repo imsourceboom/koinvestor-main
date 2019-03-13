@@ -44,7 +44,55 @@ header {
                 display: flex;
 
                 li {
+                    position: relative;
                     padding: 0 1rem;
+
+                    &.active {
+                        color: rgb(85, 158, 85);
+                    }
+
+                    @media(min-width: 1367px) {
+
+                        & {
+                            padding: .5rem 1rem;
+                        }
+
+                        & a {
+                            opacity: .5;
+                            transition: .5s;
+
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+
+                        & a::before,
+                        & a::after {
+                            position: absolute;
+                            content: '';
+                            width: 0%;
+                            height: 2px;
+                            opacity: 0;
+                            background-color: rgba(0, 0, 0, .1);
+                            transition: .3s;
+                        }
+
+                        & a::before {
+                            top: 0;
+                            left: 0;
+                        }
+
+                        & a::after {
+                            bottom: 0;
+                            right: 0;
+                        }
+
+                        & a:hover::before,
+                        & a:hover::after {
+                            opacity: 1;
+                            width: 100%;
+                        }
+                    }
                 }
             }
 

@@ -15,7 +15,8 @@ export const intro = {
 }
 
 export const main = {
-    self: doc.querySelector('body > main')
+    self: doc.querySelector('body > main'),
+    section: doc.querySelectorAll('body > main > section')
 }
 
 console.log('Webpack On!!');

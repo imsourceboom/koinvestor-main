@@ -43,7 +43,6 @@ if (browser.getBroswerName() === 'Internet Explorer') {
 
         if (y <= 200) {
             ele.classList.add('js-is-sticky');
-            ele.style.position = 'fixed';
         }
     })
 }
