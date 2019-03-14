@@ -23,8 +23,8 @@ section#team
                         },
                     ]
                 each p in profile
-                    li
-                        figure.profile
+                    li.profile
+                        figure.picture
                             img(src=`${p.img}`, alt="")
                         h4= p.name
                         p= p.position
