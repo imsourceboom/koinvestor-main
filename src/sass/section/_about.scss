@@ -9,21 +9,10 @@ section#about {
 
                 img {
                     display: block;
-                    width: 165px;
+                    width: 235px;
                     margin: 0 auto;
                     opacity: .6;
-                    // animation: opa 3s infinite alternate;
                 }
-
-                // @keyframes opa {
-                //     from {
-                //         opacity: .4;
-                //     }
-
-                //     to {
-                //         opacity: .7;
-                //     }
-                // }
 
                 figcaption {
                     font-size: 14px;
@@ -34,7 +23,7 @@ section#about {
                 @media (min-width: 768px) {
                     & {
                         img {
-                            width: 250px;
+                            width: 300px;
                         }
 
                         figcaption {
@@ -58,16 +47,16 @@ section#about {
             }
 
             .description {
-                font-size: 15px;
+                font-size: 14px;
                 font-weight: 200;
                 text-align: center;
 
                 @media (min-width: 768px) {
-                    // font-size: 1.2rem;
+                    font-size: 15px;
                 }
 
                 @media (min-width: 1600px) {
-                    // font-size: 1.5rem;
+                    font-size: 16px;
                 }
 
                 .sm {
