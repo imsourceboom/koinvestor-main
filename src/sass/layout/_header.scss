@@ -46,9 +46,11 @@ header {
                 li {
                     position: relative;
                     padding: 0 1rem;
+                    font-size: 13px;
 
                     &.active {
-                        color: rgb(85, 158, 85);
+                        // color: rgb(85, 158, 85);
+                        color: rgb(58, 127, 173);
                     }
 
                     @media(min-width: 1367px) {

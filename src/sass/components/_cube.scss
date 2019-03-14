@@ -21,9 +21,14 @@ figure.cube {
     }
 
     figcaption {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 2.5;
-        font-family: Arial;
+        font-family: 'Roboto', Arial;
+        font-weight: bold;
+        letter-spacing: 4px;
+        // color: rgb(58, 127, 173);
+        color: rgba(149, 189, 216, .65);
+
     }
 
     @media(min-width: 768px) {
@@ -33,7 +38,7 @@ figure.cube {
             }
 
             figcaption {
-                font-size: 20px;
+                // font-size: 20px;
                 line-height: 3;
             }
         }
@@ -46,7 +51,7 @@ figure.cube {
             }
 
             figcaption {
-                font-size: 22px;
+                // font-size: 22px;
                 line-height: 3;
             }
         }
@@ -60,6 +65,7 @@ figure.cube {
 
     @keyframes roll {
         from {
+            opacity: 0;
             transform: rotateY(0deg);
         }
 

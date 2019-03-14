@@ -1,0 +1,217 @@
+section#services {
+    article.container {
+        position: absolute;
+        top: 63%;
+        transform: translateY(-50%);
+        max-width: 600px;
+        margin: 0 auto;
+
+        @media (min-width: 768px) {
+            & {
+                top: 27.5%;
+                left: 12.5%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            & {
+                top: 27.5%;
+                left: 25%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .mining,
+        .accelerator {
+            h1 {
+                font-size: 45px;
+                font-weight: 900;
+                font-style: italic;
+                color: rgb(112, 112, 112);
+
+                @media (min-width: 768px) {
+                    & {
+                        font-size: 65px;
+                    }
+                }
+            }
+
+            ul {
+                li {
+                    display: flex;
+                    align-items: center;
+
+                    @media (min-width: 768px) {
+                        & {
+                            padding: .3rem 0;
+                        }
+                    }
+
+                    p {
+                        position: relative;
+                        z-index: 1;
+                        font-size: 1.25rem;
+                        font-weight: 200;
+                        font-style: italic;
+
+                        @media (min-width: 768px) {
+                            & {
+                                font-size: 1.7rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .mining {
+            ul {
+                li {
+
+                    padding: .22rem 0;
+
+                    figure {
+                        display: flex;
+                        align-items: center;
+                        height: 100%;
+                        transform: translateX(-27%);
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                            opacity: .7;
+                        }
+                    }
+
+                    &.bitcoin,
+                    &.qtum {
+                        figure {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+
+                    &.ambrosus {
+                        figure {
+                            width: 30px;
+                        }
+                    }
+
+                    &.tezos {
+                        figure {
+                            width: 18px;
+                        }
+                    }
+
+                    @media(min-width: 768px) {
+
+                        &.bitcoin,
+                        &.qtum {
+                            figure {
+                                width: 30px;
+                            }
+                        }
+
+                        &.ambrosus {
+                            figure {
+                                width: 35px;
+                            }
+                        }
+
+                        &.tezos {
+                            figure {
+                                width: 20px;
+                            }
+                        }
+                    }
+
+                    @media(min-width: 1366px) {
+
+                        &.bitcoin,
+                        &.qtum {
+                            figure {
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+
+                        &.ambrosus {
+                            figure {
+                                width: 45px;
+                            }
+                        }
+
+                        &.tezos {
+                            figure {
+                                width: 26px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .accelerator {
+
+
+            h1 {
+                text-align: right;
+                padding: 0 0 .5rem;
+            }
+
+            ul {
+
+                li {
+                    padding: .25rem 0;
+                    flex-direction: row-reverse;
+                }
+            }
+
+            @media(min-width: 768px) {
+
+                & {
+                    h1 {
+
+                        padding: 0 0 1rem;
+                    }
+
+                    ul {
+                        li {
+                            padding: .5rem 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (min-width: 768px) {
+            & {
+                transform: translate(-10%, -10%);
+
+                .mining {
+                    transform: translate(0, 50%);
+                }
+
+                .accelerator {
+                    transform: translate(20%, 0);
+                }
+            }
+        }
+
+        .border {
+            border-top: 1px solid rgba(0, 0, 0, .5);
+            width: 100%;
+            margin: 1.5rem 0;
+            transform: rotate(-45deg) translateY(-55px);
+
+            @media (min-width: 768px) {
+                width: 700px;
+                transform: rotate(-45deg) translate(-20%, -55px);
+            }
+        }
+
+    }
+}

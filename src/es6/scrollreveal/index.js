@@ -1,6 +1,7 @@
 import ScrollReveal from 'scrollreveal';
 
 window.sr = new ScrollReveal({
+    duration: 1000,
     reset: true,
     distance: '30px'
 });
@@ -9,8 +10,13 @@ window.sr = new ScrollReveal({
 /*
     각각 큰 section
 */
-sr.reveal('main > section', {
-    duration: 1000,
+sr.reveal('main > section');
+
+/*
+    section의 첫 article
+*/
+sr.reveal('main > section > article.container', {
+    delay: 350,
 });
 
 
@@ -54,3 +60,18 @@ sr.reveal('figure.cube > img', {
     beforeReset: remove,
     beforeReveal: add
 })
+
+sr.reveal('figure.cube', {
+    origin: 'top',
+    distance: '30px',
+    delay: 300
+});
+
+
+
+
+for (let i = 100; i < 1000; i += 100) {
+    sr.reveal('.delay2-' + i, {
+        delay: i,
+    });
+}
