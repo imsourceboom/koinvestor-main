@@ -31,7 +31,7 @@ var M=function(){function e(e,t){var n=void 0!==t?t:{};this.version="3.6.4",this
 	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 	SOFTWARE.
 
-*/new(n.n(I).a)('a[href*="#"]',{});var B=function(e){return"object"===D(window.Node)?e instanceof window.Node:null!==e&&"object"===D(e)&&"number"==typeof e.nodeType&&"string"==typeof e.nodeName};function W(e){return(W="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}
+*/new(n.n(I).a)('a[href*="#"]',{speed:500,speedAsDuration:!0});var B=function(e){return"object"===D(window.Node)?e instanceof window.Node:null!==e&&"object"===D(e)&&"number"==typeof e.nodeType&&"string"==typeof e.nodeName};function W(e){return(W="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}
 /*! @license is-dom-node-list v1.2.1
 
 	Copyright 2018 Fisssion LLC.

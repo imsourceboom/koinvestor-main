@@ -28,8 +28,10 @@ section#services {
 
             .box {
                 max-width: 600px;
+                padding-top: 50px;
 
                 @media(min-width: 768px) {
+                    padding-top: 0;
                     margin-right: -100px;
                 }
 
