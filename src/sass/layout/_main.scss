@@ -31,7 +31,14 @@ main {
         &>article.container {
             position: relative;
             width: 100%;
-            padding: 0 1rem 5rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 50px 1rem 0;
+
+            &>.wrap {
+                width: 100%;
+            }
         }
     }
 }

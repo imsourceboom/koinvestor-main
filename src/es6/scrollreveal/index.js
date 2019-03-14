@@ -15,7 +15,7 @@ sr.reveal('main > section');
 /*
     section의 첫 article
 */
-sr.reveal('main > section > article.container', {
+sr.reveal('main > section > article.container > .wrap', {
     delay: 350,
 });
 

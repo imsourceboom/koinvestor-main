@@ -2,50 +2,52 @@ section#services
     include ../components/cube
     +cube('SERVICES')
     article.container
-        div.mining
-            h1 Mining
-            ul
-                -
-                    var mining = [
-                        {
-                            class: 'bitcoin',
-                            name: 'Bitcoin',
-                            img: '/assets/services/bitecoin.svg'
-                        },
-                        {
-                            class: 'ambrosus',
-                            name: 'Ambrosus',
-                            img: '/assets/services/ambrosus.svg'
-                        },
-                        {
-                            class: 'qtum',
-                            name: 'Qtum',
-                            img: '/assets/services/qtum.svg'
-                        },
-                        {
-                            class: 'tezos',
-                            name: 'Tezos',
-                            img: '/assets/services/tezos.svg'
-                        },
-                    ]
-                each m in mining
-                    li(class=`${m.class}`)
-                        p= m.name
-                        figure
-                            img(src=`${m.img}` alt="")
+        .wrap
+            .box
+                div.mining
+                    h1 Mining
+                    ul
+                        -
+                            var mining = [
+                                {
+                                    class: 'bitcoin',
+                                    name: 'Bitcoin',
+                                    img: '/assets/services/bitecoin.svg'
+                                },
+                                {
+                                    class: 'ambrosus',
+                                    name: 'Ambrosus',
+                                    img: '/assets/services/ambrosus.svg'
+                                },
+                                {
+                                    class: 'qtum',
+                                    name: 'Qtum',
+                                    img: '/assets/services/qtum.svg'
+                                },
+                                {
+                                    class: 'tezos',
+                                    name: 'Tezos',
+                                    img: '/assets/services/tezos.svg'
+                                },
+                            ]
+                        each m in mining
+                            li(class=`${m.class}`)
+                                p= m.name
+                                figure
+                                    img(src=`${m.img}` alt="")
 
 
-        div.border
-        div.accelerator
-            h1 Advisory
-            ul
-                -
-                    var acc = [
-                        {class:'',content:'Fundraising'},
-                        {class:'',content:'Exchange Partnership'},
-                        {class:'',content:'Marketing & Event Coordination'},
-                        {class:'',content:'Transnational Business Development'}
-                        ]
-                each a in acc
-                    li(class=`${a.class}`)
-                        p= a.content
+                div.border
+                div.accelerator
+                    h1 Advisory
+                    ul
+                        -
+                            var acc = [
+                                {class:'',content:'Fundraising'},
+                                {class:'',content:'Exchange Partnership'},
+                                {class:'',content:'Marketing & Event Coordination'},
+                                {class:'',content:'Transnational Business Development'}
+                                ]
+                        each a in acc
+                            li(class=`${a.class}`)
+                                p= a.content

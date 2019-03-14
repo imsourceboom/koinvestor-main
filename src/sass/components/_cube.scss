@@ -1,76 +1,81 @@
-.space {
-    height: 50px;
+.cube-wrap {
+    position: absolute;
+    width: 100%;
 
-    @media(min-width: 768px) {
-        height: 60px;
-    }
-}
+    .space {
+        height: 50px;
 
-figure.cube {
-    padding: 2rem 0 1rem;
-    text-align: center;
-
-    img {
-        display: block;
-        width: 25px;
-        margin: 0 auto;
-
-        &.active {
-            animation: roll 1.5s ease-out;
+        @media(min-width: 768px) {
+            height: 60px;
         }
     }
 
-    figcaption {
-        font-size: 15px;
-        line-height: 2.5;
-        font-family: 'Roboto', Arial;
-        font-weight: bold;
-        letter-spacing: 4px;
-        // color: rgb(58, 127, 173);
-        color: rgba(149, 189, 216, .65);
+    figure.cube {
+        padding: 2rem 0 1rem;
+        text-align: center;
 
-    }
+        img {
+            display: block;
+            width: 25px;
+            margin: 0 auto;
 
-    @media(min-width: 768px) {
-        & {
-            img {
-                width: 35px;
-            }
-
-            figcaption {
-                // font-size: 20px;
-                line-height: 3;
+            &.active {
+                animation: roll 1.5s ease-out;
             }
         }
-    }
 
-    @media(min-width: 1024px) {
-        & {
-            img {
-                width: 35px;
+        figcaption {
+            font-size: 15px;
+            line-height: 2.5;
+            font-family: 'Roboto', Arial;
+            font-weight: bold;
+            letter-spacing: 4px;
+            // color: rgb(58, 127, 173);
+            color: rgba(149, 189, 216, .65);
+
+        }
+
+        @media(min-width: 768px) {
+            & {
+                img {
+                    width: 35px;
+                }
+
+                figcaption {
+                    // font-size: 20px;
+                    line-height: 3;
+                }
+            }
+        }
+
+        @media(min-width: 1024px) {
+            & {
+                img {
+                    width: 35px;
+                }
+
+                figcaption {
+                    // font-size: 22px;
+                    line-height: 3;
+                }
+            }
+        }
+
+        @media(min-width: 1366px) {
+            & {
+                padding: 3rem 0 1.5rem;
+            }
+        }
+
+        @keyframes roll {
+            from {
+                opacity: 0;
+                transform: rotateY(0deg);
             }
 
-            figcaption {
-                // font-size: 22px;
-                line-height: 3;
+            to {
+                transform: rotateY(1440deg);
             }
-        }
-    }
-
-    @media(min-width: 1366px) {
-        & {
-            padding: 3rem 0 1.5rem;
-        }
-    }
-
-    @keyframes roll {
-        from {
-            opacity: 0;
-            transform: rotateY(0deg);
-        }
-
-        to {
-            transform: rotateY(1440deg);
         }
     }
 }

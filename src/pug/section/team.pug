@@ -2,4 +2,33 @@ section#team
     include ../components/cube
     +cube('TEAM')
     article.container
-        
+        .wrap
+            ul
+                -
+                    var profile = [
+                        {
+                            name:'Dongbeom Kim',
+                            position:'CEO',
+                            img:'http://torquayslsc.com.au/wp-content/uploads/2017/08/male-profile-blank.jpg'
+                        },
+                        {
+                            name:'Steve Yun',
+                            position:'COO',
+                            img:'http://torquayslsc.com.au/wp-content/uploads/2017/08/male-profile-blank.jpg'
+                        },
+                        {
+                            name:'Min Ahn',
+                            position:'CBO',
+                            img:'http://torquayslsc.com.au/wp-content/uploads/2017/08/male-profile-blank.jpg'
+                        },
+                    ]
+                each p in profile
+                    li
+                        figure.profile
+                            img(src=`${p.img}`, alt="")
+                        h4= p.name
+                        p= p.position
+                        a
+                            figure
+                                img(src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG32.png", alt="")
+                
