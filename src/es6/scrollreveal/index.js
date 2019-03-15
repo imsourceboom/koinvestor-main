@@ -103,3 +103,11 @@ sr.reveal('#services .advisory', {
     delay: 350,
     distance: '50px'
 })
+
+
+/*
+    portfolio section
+*/
+sr.reveal('#portfolio li', {
+    delay: 150
+})
