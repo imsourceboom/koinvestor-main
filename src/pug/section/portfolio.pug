@@ -2,3 +2,78 @@ section#portfolio
     include ../components/cube
     +cube('PORTFOLIO')
     article.container
+        .wrap
+            ul
+                -
+                    var projects = [
+                        {
+                            class: 'ambrosus',
+                            name: 'Ambrosus',
+                            symbol: '/assets/portfolio/ambrosus.svg'
+                        },
+                        {
+                            class: 'eos',
+                            name: 'EOS',
+                            symbol: '/assets/portfolio/eos.png'
+                        },
+                        {
+                            class: 'gonetwork',
+                            name: 'GoNetwork',
+                            symbol: '/assets/portfolio/gonet.svg'
+                        },
+                        {
+                            class: 'komodo',
+                            name: 'Komodo',
+                            symbol: '/assets/portfolio/komodo.svg'
+                        },
+                        {
+                            class: 'paypie',
+                            name: 'Paypie',
+                            symbol: '/assets/portfolio/paypie.svg'
+                        },
+                        {
+                            class: 'playkey',
+                            name: 'Playkey',
+                            symbol: '/assets/portfolio/playkey.svg'
+                        },
+                        {
+                            class: 'qash',
+                            name: 'Qash',
+                            symbol: '/assets/portfolio/qash.svg'
+                        },
+                        {
+                            class: 'qtum',
+                            name: 'Qtum',
+                            symbol: '/assets/portfolio/qtum.svg'
+                        },
+                        {
+                            class: 'rsk',
+                            name: 'RSK',
+                            symbol: '/assets/portfolio/rsk.svg'
+                        },
+                        {
+                            class: 'telegram',
+                            name: 'Telegram',
+                            symbol: '/assets/portfolio/telegram.svg'
+                        },
+                        {
+                            class: 'tenx',
+                            name: 'TenX',
+                            symbol: '/assets/portfolio/tenx.svg'
+                        },
+                        {
+                            class: 'windingtree ',
+                            name: 'Winding Tree',
+                            symbol: '/assets/portfolio/windingtree.svg'
+                        },
+                        {
+                            class: '0x',
+                            name: '0x',
+                            symbol: '/assets/portfolio/0x.svg'
+                        },
+                    ]
+                each project in projects
+                    li(class=`${project.class}`)
+                        figure
+                            img(src=`${project.symbol}`, alt="")
+                        p= project.name
