@@ -12,17 +12,18 @@ main {
         // max-width: 1024px;
         min-height: 100vh;
         margin: -50px auto 0;
-        border-bottom: 1px solid rgba(255, 255, 255, .5);
+        border-bottom: 30px solid rgba(255, 255, 255, .5);
 
-        // &:last-child {
-        //     min-height: initial;
+        &:last-child {
+            border-bottom: none;
+            // min-height: initial;
 
-        //     & article.container {
-        //         display: flex;
-        //         justify-content: center;
-        //         padding: 5rem 0 10rem;
-        //     }
-        // }
+            // & article.container {
+            //     display: flex;
+            //     justify-content: center;
+            //     padding: 5rem 0 10rem;
+            // }
+        }
 
         @media (min-width: 768px) {
             margin-top: -60px;
