@@ -1,7 +1,7 @@
 import ScrollReveal from 'scrollreveal';
 
 window.sr = new ScrollReveal({
-    duration: 700,
+    duration: 500,
     reset: true,
     distance: '30px'
 });
@@ -75,7 +75,7 @@ for (let i = 100; i < 1000; i += 100) {
     about section
 */
 sr.reveal('#about .wrap', {
-    delay: 350,
+    delay: 300,
 });
 
 
@@ -85,7 +85,7 @@ sr.reveal('#about .wrap', {
 */
 // profile each
 sr.reveal('#team .profile', {
-    delay: 350,
+    delay: 300,
 });
 
 
@@ -95,12 +95,12 @@ sr.reveal('#team .profile', {
 */
 // mining
 sr.reveal('#services .mining', {
-    delay: 350,
+    delay: 300,
     distance: '50px'
 })
 // advisory
 sr.reveal('#services .advisory', {
-    delay: 350,
+    delay: 300,
     distance: '50px'
 })
 
