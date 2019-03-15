@@ -13,7 +13,7 @@ section#team {
 
             ul {
                 display: flex;
-                flex-wrap: wrap;
+                // flex-wrap: wrap;
 
                 li {
                     width: 100%;
@@ -31,10 +31,25 @@ section#team {
                     }
 
                     figure.picture {
-                        width: 200px;
-                        height: 200px;
+                        width: 80px;
+                        height: 80px;
                         border-radius: 50%;
                         overflow: hidden;
+
+                        @media(min-width: 768px) {
+                            width: 150px;
+                            height: 150px;
+                        }
+
+                        @media(min-width: 1024px) {
+                            width: 165px;
+                            height: 165px;
+                        }
+
+                        @media(min-width: 1366px) {
+                            width: 180px;
+                            height: 180px;
+                        }
 
                         img {
                             width: 100%;
@@ -43,14 +58,23 @@ section#team {
                     }
 
                     h4 {
+                        font-size: 14px;
                         font-family: 'Roboto', sans-serif;
                         font-weight: bold;
                         padding: 1rem 0 .5rem;
+
+                        @media(min-width: 768px) {
+                            font-size: 16px;
+                        }
                     }
 
                     p {
-                        font-size: 14px;
+                        font-size: 13px;
                         margin-bottom: 1rem;
+
+                        @media(min-width: 768px) {
+                            font-size: 14px;
+                        }
                     }
 
                     a {
