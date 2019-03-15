@@ -100,7 +100,7 @@ sr.reveal('#services .mining', {
     distance: '50px'
 })
 // advisory
-sr.reveal('#services .accelerator', {
+sr.reveal('#services .advisory', {
     origin: 'right',
     delay: 150,
     distance: '50px'

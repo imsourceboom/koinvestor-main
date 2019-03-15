@@ -3,51 +3,72 @@ section#services
     +cube('SERVICES')
     article.container
         .wrap
-            .box
-                div.mining
-                    h1 Mining
-                    ul
-                        -
-                            var mining = [
-                                {
-                                    class: 'bitcoin',
-                                    name: 'Bitcoin',
-                                    img: '/assets/services/bitecoin.svg'
-                                },
-                                {
-                                    class: 'ambrosus',
-                                    name: 'Ambrosus',
-                                    img: '/assets/services/ambrosus.svg'
-                                },
-                                {
-                                    class: 'qtum',
-                                    name: 'Qtum',
-                                    img: '/assets/services/qtum.svg'
-                                },
-                                {
-                                    class: 'tezos',
-                                    name: 'Tezos',
-                                    img: '/assets/services/tezos.svg'
-                                },
-                            ]
-                        each m in mining
-                            li(class=`${m.class}`)
-                                p= m.name
+            div.mining
+                h1 Mining
+                ul
+                    -
+                        var mining = [
+                            {
+                                class: 'bitcoin',
+                                name: 'Bitcoin',
+                                img: '/assets/services/bitecoin.svg'
+                            },
+                            {
+                                class: 'ambrosus',
+                                name: 'Ambrosus',
+                                img: '/assets/services/ambrosus.svg'
+                            },
+                            {
+                                class: 'qtum',
+                                name: 'Qtum',
+                                img: '/assets/services/qtum.svg'
+                            },
+                            {
+                                class: 'tezos',
+                                name: 'Tezos',
+                                img: '/assets/services/tezos.svg'
+                            },
+                        ]
+                    each m in mining
+                        li
+                            div.box
                                 figure
-                                    img(src=`${m.img}` alt="")
+                                    img(src=`${m.img}` alt="" class=`${m.class}`)
+                                p= m.name
 
 
-                div.border
-                div.accelerator
-                    h1 Advisory
-                    ul
-                        -
-                            var acc = [
-                                {class:'',content:'Fundraising'},
-                                {class:'',content:'Exchange Partnership'},
-                                {class:'',content:'Marketing & Event Coordination'},
-                                {class:'',content:'Transnational Business Development'}
-                                ]
-                        each a in acc
-                            li(class=`${a.class}`)
-                                p= a.content
+            div.border
+            div.advisory
+                h1 Advisory
+                ul
+                    -
+                        var acc = [
+                            {
+                                class:'',
+                                img: '/assets/services/fundraise.png',
+                                content:'Fundraising',
+                                
+                            },
+                            {
+                                class:'',
+                                img: '/assets/services/exchanges.png',
+                                content:'Exchange Partnership',
+                                
+                            },
+                            {
+                                class:'',
+                                img: '/assets/services/marketing.png',
+                                content:'Marketing & Event Coordination',
+                                
+                            },
+                            {
+                                class:'',
+                                img: '/assets/services/transnational.png',
+                                content:'Transnational Business Development'
+                            }
+                        ]
+                    each a in acc
+                        li(class=`${a.class}`)
+                            figure
+                                img(src=`${a.img}`, alt="")
+                            p= a.content
