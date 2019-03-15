@@ -95,13 +95,11 @@ sr.reveal('#team .profile', {
 */
 // mining
 sr.reveal('#services .mining', {
-    origin: 'left',
-    delay: 150,
+    delay: 350,
     distance: '50px'
 })
 // advisory
 sr.reveal('#services .advisory', {
-    origin: 'right',
-    delay: 150,
+    delay: 350,
     distance: '50px'
 })
