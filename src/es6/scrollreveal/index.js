@@ -96,12 +96,12 @@ sr.reveal('#team .profile', {
 // mining
 sr.reveal('#services .mining', {
     origin: 'left',
-    delay: 100,
+    delay: 150,
     distance: '50px'
 })
 // advisory
 sr.reveal('#services .accelerator', {
     origin: 'right',
-    delay: 100,
+    delay: 150,
     distance: '50px'
 })
