@@ -12,13 +12,6 @@ window.sr = new ScrollReveal({
 */
 sr.reveal('main > section');
 
-/*
-    section의 첫 article
-*/
-sr.reveal('main > section > article.container > .wrap', {
-    delay: 350,
-});
-
 
 /* 
     Heaer 영역  
@@ -78,5 +71,37 @@ for (let i = 100; i < 1000; i += 100) {
 
 
 
+/*
+    about section
+*/
+sr.reveal('#about .wrap', {
+    delay: 350,
+});
 
-sr.reveal('#team .profile');
+
+
+/* 
+    team section
+*/
+// profile each
+sr.reveal('#team .profile', {
+    delay: 350,
+});
+
+
+
+/*
+    services sectoin
+*/
+// mining
+sr.reveal('#services .mining', {
+    origin: 'left',
+    delay: 100,
+    distance: '50px'
+})
+// advisory
+sr.reveal('#services .accelerator', {
+    origin: 'right',
+    delay: 100,
+    distance: '50px'
+})
