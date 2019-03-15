@@ -109,5 +109,5 @@ sr.reveal('#services .advisory', {
     portfolio section
 */
 sr.reveal('#portfolio li', {
-    delay: 150
+    delay: 300
 })
