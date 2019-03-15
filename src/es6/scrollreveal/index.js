@@ -111,3 +111,11 @@ sr.reveal('#services .advisory', {
 sr.reveal('#portfolio li', {
     delay: 300
 })
+
+
+/*
+    partners section
+*/
+sr.reveal('#partners li', {
+    delay: 300
+})
