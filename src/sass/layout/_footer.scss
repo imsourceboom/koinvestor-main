@@ -1,10 +1,14 @@
-// footer {
-//     position: relative;
-//     height: 10rem;
-//     background-color: rgb(78, 78, 78);
-//     color: white;
+footer {
+    position: relative;
+    // height: 10rem;
+    // background-color: rgb(78, 78, 78);
+    border-top: 1px solid rgba(0, 0, 0, .05);
+    text-align: center;
+    padding: 1rem 0;
+    color: rgba(0, 0, 0, .4);
 
-//     h1 {
-//         @include centered;
-//     }
-// }
+
+    p {
+        // @include centered;
+    }
+}
