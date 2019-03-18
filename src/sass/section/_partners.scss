@@ -1,7 +1,6 @@
 section#partners {
-
     &::after {
-        content: "";
+        content: '';
         display: block;
         position: absolute;
         top: 0;
@@ -15,11 +14,10 @@ section#partners {
         opacity: 0.1;
         z-index: -1;
 
-        @media(min-width: 1024px) {
+        @media (min-width: 1024px) {
             background-image: url('/assets/partners/hand-web.png');
         }
     }
-
 
     article.container {
         padding: 150px 1rem 50px;
@@ -36,7 +34,7 @@ section#partners {
                 justify-content: center;
                 align-items: center;
 
-                @media(min-width: 768px) {
+                @media (min-width: 768px) {
                     flex-direction: row;
                     justify-content: space-around;
                 }
@@ -52,11 +50,11 @@ section#partners {
                         object-fit: contain;
                     }
 
-                    &.quoine {
-                        img {
-                            // max-width: 100%;
-                        }
-                    }
+                    // &.quoine {
+                    //     img {
+                    //         max-width: 100%;
+                    //     }
+                    // }
                 }
             }
         }
