@@ -9,17 +9,20 @@ section#team
                         {
                             name:'Dongbeom Kim',
                             position:'CEO',
-                            img:'http://torquayslsc.com.au/wp-content/uploads/2017/08/male-profile-blank.jpg'
+                            img:'http://torquayslsc.com.au/wp-content/uploads/2017/08/male-profile-blank.jpg',
+                            linkedin: 'https://www.linkedin.com/in/dongbeom-kim-582a62149/'
                         },
                         {
                             name:'Steve Yun',
                             position:'COO',
-                            img:'http://torquayslsc.com.au/wp-content/uploads/2017/08/male-profile-blank.jpg'
+                            img:'http://torquayslsc.com.au/wp-content/uploads/2017/08/male-profile-blank.jpg',
+                            linkedin: 'https://www.linkedin.com/in/steve-yun/'
                         },
                         {
                             name:'Min Ahn',
                             position:'CBO',
-                            img:'http://torquayslsc.com.au/wp-content/uploads/2017/08/male-profile-blank.jpg'
+                            img:'http://torquayslsc.com.au/wp-content/uploads/2017/08/male-profile-blank.jpg',
+                            linkedin: 'https://www.linkedin.com/in/min-ahn/'
                         },
                     ]
                 each p in profile
@@ -28,7 +31,7 @@ section#team
                             img(src=`${p.img}`, alt="")
                         h4= p.name
                         p= p.position
-                        a
+                        a(href=`${p.linkedin}` target="_blank")
                             figure
                                 img(src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG32.png", alt="")
                 

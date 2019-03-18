@@ -9,71 +9,85 @@ section#portfolio
                         {
                             class: 'ambrosus',
                             name: 'Ambrosus',
-                            symbol: '/assets/portfolio/ambrosus.svg'
+                            symbol: '/assets/portfolio/ambrosus.svg',
+                            url:'https://ambrosus.com/'
                         },
                         {
                             class: 'eos',
                             name: 'EOS',
-                            symbol: '/assets/portfolio/eos.png'
+                            symbol: '/assets/portfolio/eos.png',
+                            url:'https://eos.io/'
                         },
                         {
                             class: 'gonetwork',
                             name: 'GoNetwork',
-                            symbol: '/assets/portfolio/gonet.svg'
+                            symbol: '/assets/portfolio/gonet.svg',
+                            url:'https://gonetwork.co/'
                         },
                         {
                             class: 'komodo',
                             name: 'Komodo',
-                            symbol: '/assets/portfolio/komodo.svg'
+                            symbol: '/assets/portfolio/komodo.svg',
+                            url:'https://komodoplatform.com/'
                         },
                         {
                             class: 'paypie',
                             name: 'Paypie',
-                            symbol: '/assets/portfolio/paypie.svg'
+                            symbol: '/assets/portfolio/paypie.svg',
+                            url:'https://www.paypie.com/'
                         },
                         {
                             class: 'playkey',
                             name: 'Playkey',
-                            symbol: '/assets/portfolio/playkey.svg'
+                            symbol: '/assets/portfolio/playkey.svg',
+                            url:'https://playkey.io/'
                         },
                         {
                             class: 'qash',
                             name: 'Qash',
-                            symbol: '/assets/portfolio/qash.svg'
+                            symbol: '/assets/portfolio/qash.svg',
+                            url:'https://www.liquid.com/'
                         },
                         {
                             class: 'qtum',
                             name: 'Qtum',
-                            symbol: '/assets/portfolio/qtum.svg'
+                            symbol: '/assets/portfolio/qtum.svg',
+                            url:'https://qtum.org/'
                         },
                         {
                             class: 'rsk',
                             name: 'RSK',
-                            symbol: '/assets/portfolio/rsk.svg'
+                            symbol: '/assets/portfolio/rsk.svg',
+                            url:'https://www.rsk.co/'
                         },
                         {
                             class: 'telegram',
                             name: 'Telegram',
-                            symbol: '/assets/portfolio/telegram.svg'
+                            symbol: '/assets/portfolio/telegram.svg',
+                            url:'https://ambrosus.com/'
                         },
                         {
                             class: 'tenx',
                             name: 'TenX',
-                            symbol: '/assets/portfolio/tenx.svg'
+                            symbol: '/assets/portfolio/tenx.svg',
+                            url:'https://tenx.tech/'
                         },
                         {
                             class: 'windingtree ',
                             name: 'Winding Tree',
-                            symbol: '/assets/portfolio/windingtree.svg'
+                            symbol: '/assets/portfolio/windingtree.svg',
+                            url:'https://windingtree.com/'
                         },
                         {
                             class: '0x',
                             name: '0x',
-                            symbol: '/assets/portfolio/0x.svg'
+                            symbol: '/assets/portfolio/0x.svg',
+                            url:'https://0x.org/'
                         },
                     ]
                 each project in projects
                     li(class=`${project.class}`)
-                        figure
-                            img(src=`${project.symbol}`, alt="")
-                        p= project.name
+                        a(href=`${project.url}` target="_blank")
+                            figure
+                                img(src=`${project.symbol}`, alt="")
+                            p= project.name

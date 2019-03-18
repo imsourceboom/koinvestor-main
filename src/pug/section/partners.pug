@@ -8,18 +8,21 @@ section#partners
                     var partners = [
                         {
                             class: 'hash',
-                            img:'/assets/partners/hash.svg'
-                        },
-                        {
-                            class: 'liquid',
-                            img:'/assets/partners/liquid.png'
+                            img:'/assets/partners/hash.svg',
+                            url:'https://hashcib.com/'
                         },
                         {
                             class: 'inventure',
-                            img:'/assets/partners/inventure.svg'
+                            img:'/assets/partners/inventure.svg',
+                            url:'https://inventurepartners.com/'
+                        },
+                        {
+                            class: 'liquid',
+                            img:'/assets/partners/liquid.png',
+                            url:'https://www.liquid.com/'
                         },
                     ]
                 each partner in partners
                     li(class=`${partner.class}`)
-                        a()
+                        a(href=`${partner.url}` target="_blank")
                             img(src=`${partner.img}`, alt="")
