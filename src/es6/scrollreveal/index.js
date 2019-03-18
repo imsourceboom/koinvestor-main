@@ -94,12 +94,12 @@ sr.reveal('#team .profile', {
     services sectoin
 */
 // mining
-sr.reveal('#services .mining', {
+sr.reveal('#services .mining li', {
     delay: 300,
     distance: '50px'
 })
 // advisory
-sr.reveal('#services .advisory', {
+sr.reveal('#services .advisory li', {
     delay: 300,
     distance: '50px'
 })

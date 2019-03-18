@@ -1,10 +1,13 @@
 section#portfolio {
+
+
     article.container {
-        padding: 150px 1rem 50px;
+        // padding: 150px 1rem 50px;
+        // border-bottom: 1px solid rgba(0, 0, 0, .1);
 
         @media (min-width: 1366px) {
             & {
-                padding: 200px 1rem 50px;
+                // padding: 200px 1rem 50px;
             }
         }
 
@@ -31,7 +34,7 @@ section#portfolio {
                     opacity: 0.7;
                     transition: 0.3s;
 
-                    & > a {
+                    &>a {
                         display: flex;
                         flex-direction: column;
                         align-items: center;

@@ -1,5 +1,11 @@
-.cube-wrap {
+#about>.cube-wrap {
     position: absolute;
+}
+
+
+.cube-wrap {
+    // position: absolute;
+    position: relative;
     width: 100%;
 
     .space {

@@ -1,7 +1,119 @@
 section#contact {
     article.container {
-        padding: 150px 1rem 50px;
+        padding: 1rem 1rem 15rem;
 
-        .wrap {}
+        .wrap {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            height: auto;
+
+            form {
+
+                .input {
+                    position: relative;
+                    min-height: 40px;
+                    margin: 0 0 1.5rem;
+
+                    label {
+                        position: absolute;
+                        width: 50px;
+                        min-height: 40px;
+                        z-index: 1;
+                        background-position: center;
+                        background-repeat: no-repeat;
+
+                        &[for] {
+                            opacity: .5;
+                            -webkit-filter: grayscale(100%);
+                            -moz-filter: grayscale(100%);
+                            -ms-filter: grayscale(100%);
+                            -o-filter: grayscale(100%);
+                            filter: gray;
+                            transition: .5s;
+                        }
+
+                        &[for="name"] {
+                            background-image: url('https://icongr.am/material/account.svg?size=30&color=0fb9b1');
+                        }
+
+                        &[for="email"] {
+                            background-image: url('https://icongr.am/material/email.svg?size=30&color=0fb9b1');
+                        }
+
+                        &[for="message"] {
+                            background-image: url('https://icongr.am/material/lead-pencil.svg?size=30&color=0fb9b1');
+                        }
+                    }
+
+                    input,
+                    textarea {
+                        float: right;
+                        width: 85%;
+                        min-height: 40px;
+                        font-size: 16px;
+                        border-radius: 4px;
+                        border: none;
+                        box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .1);
+                        padding: 0 1rem;
+                        transition: .7s;
+
+                        @media(min-width: 768px) {
+                            width: 88%;
+                        }
+
+                        &:focus {
+                            width: 100%;
+                            padding: 0 50px;
+
+                            &+label {
+                                opacity: 1;
+                                -webkit-filter: grayscale(0%);
+                                -moz-filter: grayscale(0%);
+                                -ms-filter: grayscale(0%);
+                                -o-filter: grayscale(0%);
+                                filter: none;
+                            }
+                        }
+                    }
+
+                    textarea {
+                        padding: 1rem;
+                        min-height: 200px;
+
+                        &:focus {
+                            width: 100%;
+                            padding: 1rem 50px;
+                        }
+                    }
+                }
+
+                button {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 85%;
+                    height: 45px;
+                    border: 1px solid rgba(0, 0, 0, .2);
+                    border-radius: 4px;
+                    font-size: 16px;
+                    color: rgba(0, 0, 0, .3);
+                    transform: translateY(150%);
+                    transition: .3s;
+
+                    &:hover {
+                        color: rgba(87, 170, 119, 1);
+                        border: 1px solid rgba(87, 170, 119, 1);
+                        cursor: pointer;
+                    }
+
+                    @media(min-width: 768px) {
+                        width: 88%;
+                    }
+                }
+            }
+
+        }
     }
 }

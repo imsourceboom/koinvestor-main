@@ -3,4 +3,26 @@ section#contact
     +cube('CONTACT US')
     article.container
         .wrap
-        
+            form
+                //- label(for="name")
+                //-     figure.name-image
+                //-         //- img(src="", alt="")
+                //-     input#name(type="text" placeholder="Name")
+                //- label(for="email")
+                //-     figure.email-image
+                //-         //- img(src="", alt="")
+                //-     input#email(type="email" placeholder="E-mail")
+                //- label(for="doc")
+                //-     figure.email-image
+                //-         //- img(src="", alt="")
+                //-     textarea#doc(name="", cols="30", rows="10")
+                .input
+                    input#name(type="text" placeholder="Name")
+                    label(for="name")
+                .input
+                    input#email(type="email" placeholder="E-mail")
+                    label(for="email")
+                .input
+                    textarea#message(placeholder="Message")
+                    label(for="message")
+                button SEND

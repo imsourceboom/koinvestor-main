@@ -29,7 +29,8 @@ label {
     color: rgba(0, 0, 0, .54);
 }
 
-input {
+input,
+textarea {
     &::placeholder {
         /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: rgba(112, 112, 112, 0.4);
