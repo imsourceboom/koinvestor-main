@@ -16,12 +16,14 @@ section#team {
 
             ul {
                 display: flex;
-                // flex-wrap: wrap;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
 
                 li {
-                    width: 100%;
-                    max-width: 250px;
-                    margin: 0 auto;
+                    width: 33%;
+                    // max-width: 250px;
+                    // margin: 0 auto;
 
                     display: flex;
                     flex-direction: column;
@@ -30,6 +32,17 @@ section#team {
                     @media (max-width: 767px) {
                         & {
                             padding: 1rem 0 3rem;
+
+                            &:first-child {
+                                width: 100%;
+                                max-width: 100%;
+                                padding: 1rem 0;
+                            }
+
+                            &:nth-child(2),
+                            &:last-child {
+                                width: 50%;
+                            }
                         }
                     }
 

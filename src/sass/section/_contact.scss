@@ -114,6 +114,12 @@ section#contact {
                         cursor: pointer;
                     }
 
+                    &.can-send {
+                        background-color: rgba(87, 170, 119, 1);
+                        border: none;
+                        color: white;
+                    }
+
                     @media(min-width: 768px) {
                         width: 88%;
                     }

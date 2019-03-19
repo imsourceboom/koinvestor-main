@@ -19,4 +19,12 @@ export const main = {
     section: doc.querySelectorAll('body > main > section')
 }
 
+export const contactUs = {
+    self: doc.querySelector('body > main > #contact'),
+    name: doc.querySelector('#contact input#name'),
+    email: doc.querySelector('#contact input#email'),
+    message: doc.querySelector('#contact textarea#message'),
+    button: doc.querySelector('#contact button')
+}
+
 console.log('Webpack On!!');
