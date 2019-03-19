@@ -19,11 +19,6 @@ const activeMenu = () => {
             menus[i].classList.remove('active')
             menus[5].classList.add('active')
         }
-        // if (i === 4 ) {
-        //     menus[i].classList.add('active')
-        //     menus[5].classList.remove('active')
-        // }
-
     })
 }
 
