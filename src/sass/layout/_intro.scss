@@ -28,7 +28,7 @@ article.cover {
 
             to {
                 opacity: 1;
-                transform: translate(0, 0);
+                transform: translate(0, -100%);
                 filter: blur(0);
             }
         }
@@ -37,7 +37,9 @@ article.cover {
             animation: blur 1.5s both;
 
             @keyframes blur {
-                from {}
+                from {
+                    transform: translate(0, -100%);
+                }
 
                 to {
                     transform: scale(2);
