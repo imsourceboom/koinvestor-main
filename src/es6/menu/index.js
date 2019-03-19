@@ -8,12 +8,22 @@ const sections = Array.from(main.section);
 
 const activeMenu = () => {
     sections.map((s, i) => {
-        const y = s.getBoundingClientRect().top;
-        if (y > -300 && y < 300) {
-            menus[i].classList.add('active')
+        const t = s.getBoundingClientRect().top;
+        // const b = s.getBoundingClientRect().bottom;
+        if (t > -300 && t < 300) {
+            menus[i].classList.add('active');
         } else {
             menus[i].classList.remove('active')
         }
+        if (i === 4 && t < -150) {
+            menus[i].classList.remove('active')
+            menus[5].classList.add('active')
+        }
+        // if (i === 4 ) {
+        //     menus[i].classList.add('active')
+        //     menus[5].classList.remove('active')
+        // }
+
     })
 }
 
