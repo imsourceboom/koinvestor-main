@@ -1,65 +1,86 @@
-article.bg {
+article.cover {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    z-index: 99;
+    width: 100vw;
     height: 100vh;
-
-    img,
-    video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
-article.intro {
-    position: relative;
-    // z-index: 1;
-    width: 100%;
-    height: 100vh;
-    max-height: 100vh;
+    background-color: rgba(255, 255, 255, 1);
+    overscroll-behavior-y: contain;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    overflow: hidden;
 
-    & .type-one {
-        position: relative;
-        z-index: 1;
-        font-size: 1.5rem;
-        color: rgba(255, 255, 255, .3);
-        animation: pulse 1.5s infinite alternate;
+    font-size: 3rem;
 
-        @media (min-width: 768px) {
-            font-size: 1.75rem;
-        }
+    @media(min-width: 768px) {
 
-        @media (min-width: 1366px) {
-            font-size: 2rem;
-        }
+        font-size: 5rem;
+    }
 
-        @keyframes pulse {
+    p.typed {
+        animation: draft 2s both;
+
+        @keyframes draft {
             from {
-                transform: scale(1);
+                opacity: 0;
+                transform: translate(0, 70px);
+                filter: blur(10px);
             }
 
             to {
-                transform: scale(1.05);
-                color: rgba(255, 255, 255, .8);
+                opacity: 1;
+                transform: translate(0, 0);
+                filter: blur(0);
+            }
+        }
+
+        &.trigger {
+            animation: blur 1.5s both;
+
+            @keyframes blur {
+                from {}
+
+                to {
+                    transform: scale(2);
+                    filter: blur(10px);
+                    opacity: 0;
+                }
             }
         }
     }
 
-    & a.bottom-button {
+    a.arrow {
         position: absolute;
-        z-index: 2;
+        z-index: 100;
         bottom: 30px;
         left: 50%;
-        transform: translateX(-50%);
         width: 60px;
         height: 60px;
+        transform: translateX(-50%);
+        animation: arrowdraft .7s 1.5s both;
+
+        @keyframes arrowdraft {
+            from {
+                opacity: 0;
+                transform: translate(-50%, 50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(-50%, 0);
+            }
+        }
+
+        &.disappear {
+            animation: disappear 1.5s both;
+
+            @keyframes disappear {
+                form {}
+
+                to {
+                    transform: translate(-50%, 100px);
+                }
+            }
+        }
 
         @media(min-width: 768px) {
             width: 80px;
@@ -72,8 +93,8 @@ article.intro {
             left: 50%;
             width: 20px;
             height: 20px;
-            border-top: 1px solid rgba(255, 255, 255, .6);
-            border-left: 1px solid rgba(255, 255, 255, .6);
+            border-top: 1px solid rgba(0, 0, 0, .5);
+            border-left: 1px solid rgba(0, 0, 0, .5);
             transform: translate(-50%, -70%) rotateZ(-135deg);
             animation: down 1.5s infinite alternate;
 
@@ -98,3 +119,107 @@ article.intro {
         }
     }
 }
+
+/*
+// article.bg {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100vh;
+
+//     img,
+//     video {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//     }
+// }
+
+
+// article.intro {
+//     position: relative;
+//     // z-index: 1;
+//     width: 100%;
+//     height: 100vh;
+//     max-height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//     overflow: hidden;
+
+//     & .type-one {
+//         position: relative;
+//         z-index: 1;
+//         font-size: 1.5rem;
+//         color: rgba(255, 255, 255, .3);
+//         animation: pulse 1.5s infinite alternate;
+
+//         @media (min-width: 768px) {
+//             font-size: 1.75rem;
+//         }
+
+//         @media (min-width: 1366px) {
+//             font-size: 2rem;
+//         }
+
+//         @keyframes pulse {
+//             from {
+//                 transform: scale(1);
+//             }
+
+//             to {
+//                 transform: scale(1.05);
+//                 color: rgba(255, 255, 255, .8);
+//             }
+//         }
+//     }
+
+//     & a.arrow {
+//         position: absolute;
+//         z-index: 2;
+//         bottom: 30px;
+//         left: 50%;
+//         transform: translateX(-50%);
+//         width: 60px;
+//         height: 60px;
+
+//         @media(min-width: 768px) {
+//             width: 80px;
+//             height: 80px;
+//         }
+
+//         & div {
+//             position: absolute;
+//             top: 50%;
+//             left: 50%;
+//             width: 20px;
+//             height: 20px;
+//             border-top: 1px solid rgba(255, 255, 255, .6);
+//             border-left: 1px solid rgba(255, 255, 255, .6);
+//             transform: translate(-50%, -70%) rotateZ(-135deg);
+//             animation: down 1.5s infinite alternate;
+
+//             @media(min-width: 768px) {
+//                 width: 25px;
+//                 height: 25px;
+//             }
+
+//             &:first-child {
+//                 transform: translate(-50%, -10%)rotateZ(-135deg);
+//             }
+
+//             @keyframes down {
+//                 0% {
+//                     top: 0;
+//                 }
+
+//                 100% {
+//                     top: 50%;
+//                 }
+//             }
+//         }
+//     }
+// }
+*/

@@ -3,15 +3,16 @@ import {
     intro
 } from '../elements'
 
-const typedOne = intro.typeOne;
+const typed = intro.typed;
 
 
 window.addEventListener('DOMContentLoaded', () => {
-    new Typed(typedOne, {
-        strings: ['Welcome to KOINVESTOR'],
-        typeSpeed: 50,
+    new Typed(typed, {
+        strings: ["KOINVESTOR"],
+        typeSpeed: 100,
         startDelay: 1500,
         showCursor: false,
-        loop: true
+        fadeOut: true,
+        // loop: true
     })
 })

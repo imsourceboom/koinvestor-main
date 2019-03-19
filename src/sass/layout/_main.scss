@@ -1,8 +1,25 @@
 main {
     position: relative;
     z-index: 1;
-    // background-color: rgb(235, 235, 235);
     background-color: rgb(255, 255, 255);
+    // background-color: rgb(235, 235, 235);
+
+    opacity: 0;
+
+    &.active {
+        animation: fadeIn 1s both;
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+
+        }
+    }
 
     @import './header';
 

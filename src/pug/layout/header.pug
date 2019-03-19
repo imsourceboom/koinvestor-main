@@ -40,7 +40,7 @@ header
                         }
                     ]
                 each m in menu
-                    li.reveal(class=`${m.class}`)
+                    li(class=`${m.class}`)
                         a(href=`#${m.id}` data-scroll)= m.name
         .hamburger.hamburger--squeeze.js-hamburger
             .hamburger-box
