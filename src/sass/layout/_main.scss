@@ -2,11 +2,12 @@ main {
     position: relative;
     z-index: 1;
     background-color: rgb(255, 255, 255);
-    // background-color: rgb(235, 235, 235);
-
-    opacity: 0;
+    height: 100%;
+    overflow: hidden;
 
     &.active {
+        height: auto;
+        overflow: initial;
         animation: fadeIn 1s both;
 
         @keyframes fadeIn {

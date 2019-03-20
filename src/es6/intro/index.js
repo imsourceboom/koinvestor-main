@@ -25,7 +25,7 @@ window.addEventListener('scroll', () => {
 
 
         setTimeout(() => {
-            cover.style.display = 'none'
+            cover.style.display = 'none';
             setTimeout(() => {
                 if (cover.style.display === 'none') {
                     window.scrollTo(0, 0);

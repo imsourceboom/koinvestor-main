@@ -108,11 +108,17 @@ sr.reveal('#team .profile', {
     services sectoin
 */
 // mining
+sr.reveal('#services .mining h1', {
+    distance: '50px'
+})
 sr.reveal('#services .mining li', {
     delay: 300,
     distance: '50px'
 })
 // advisory
+sr.reveal('#services .advisory h1', {
+    distance: '50px'
+})
 sr.reveal('#services .advisory li', {
     delay: 300,
     distance: '50px'
@@ -131,5 +137,20 @@ sr.reveal('#portfolio li', {
     partners section
 */
 sr.reveal('#partners li', {
+    delay: 300
+})
+
+
+
+/*
+    contact section
+*/
+sr.reveal('#contact input', {
+    delay: 300
+})
+sr.reveal('#contact textarea', {
+    delay: 300
+})
+sr.reveal('#contact button', {
     delay: 300
 })

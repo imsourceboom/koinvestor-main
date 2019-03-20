@@ -6,9 +6,9 @@ section#portfolio {
         // border-bottom: 1px solid rgba(0, 0, 0, .1);
 
         @media (min-width: 1366px) {
-            & {
-                // padding: 200px 1rem 50px;
-            }
+            // & {
+            //     padding: 200px 1rem 50px;
+            // }
         }
 
         .wrap {
@@ -57,13 +57,13 @@ section#portfolio {
                         }
                     }
 
-                    &.windingtree {
-                        figure {
-                            img {
-                                // width: 35%;
-                            }
-                        }
-                    }
+                    // &.windingtree {
+                    //     figure {
+                    //         img {
+                    //             width: 35%;
+                    //         }
+                    //     }
+                    // }
 
                     &.rsk {
                         figure {

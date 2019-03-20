@@ -13,6 +13,28 @@ section#contact {
             margin: 0 auto;
             height: auto;
 
+            .address {
+                margin: 1rem 0 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: .7;
+
+                figure {
+                    width: 40px;
+                    height: 30px;
+                    background-image: url('https://icongr.am/clarity/email.svg?size=30&color=000000');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    opacity: .5;
+                }
+
+                p {
+                    margin: -5px 0 0 .5rem;
+                }
+            }
+
             form {
 
                 .input {
