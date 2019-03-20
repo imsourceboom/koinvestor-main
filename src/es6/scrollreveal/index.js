@@ -1,9 +1,10 @@
 import ScrollReveal from 'scrollreveal';
 
 window.sr = new ScrollReveal({
-    duration: 500,
+    // duration: 100,
     reset: true,
-    distance: '30px'
+    distance: '30px',
+    reset: false
 });
 
 
