@@ -11,6 +11,20 @@ header {
         height: 60px;
     }
 
+    &.active {
+        animation: fadeIn .7s .1s both;
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    }
+
 
 
     .container {

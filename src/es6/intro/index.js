@@ -13,6 +13,8 @@ const aboutEle = about.self;
 const cover = intro.self;
 const typed = intro.typed;
 const arrow = intro.arrow;
+
+const headerEle = header.self;
 const li = Array.from(header.li);
 const logo = header.logo;
 const hamburger = header.hamburger;
@@ -30,6 +32,7 @@ window.addEventListener('scroll', () => {
                 if (cover.style.display === 'none') {
                     window.scrollTo(0, 0);
                     mainEle.classList.add('active');
+                    headerEle.classList.add('active');
                     li.map((e) => {
                         e.classList.add('reveal');
                     })
