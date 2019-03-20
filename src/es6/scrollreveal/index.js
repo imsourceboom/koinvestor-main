@@ -145,6 +145,9 @@ sr.reveal('#partners li', {
 /*
     contact section
 */
+sr.reveal('#contact .address', {
+    delay: 300
+})
 sr.reveal('#contact input', {
     delay: 300
 })
