@@ -1922,11 +1922,6 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-cross-browser-polyfill@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/cross-browser-polyfill/-/cross-browser-polyfill-1.0.4.tgz#aabd499ae9d644d9045b7744c520c319d5d3e494"
-  integrity sha512-ztRKi14s+7St336c5SZ+P2gQpl3ZfO2hwxRsOQVhpiSsVaIv5rcwOOBoYeFsVYSV8fWSDf1VVsxWa4ScAmcwnA==
-
 cross-spawn@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-3.0.1.tgz#1256037ecb9f0c5f79e3d6ef135e30770184b982"
@@ -6482,11 +6477,6 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
   integrity sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q=
-
-typed.js@^2.0.10:
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/typed.js/-/typed.js-2.0.10.tgz#70a1c1ad11965923bc9e52f851d1891b0ca1316f"
-  integrity sha512-tpK+LRm5FM2GAIWWWogbOc4QRlctS425Ef1PCQKbj/G9wyig+Zt+20eLruK7CBPR+DEl/ou4uSfpwRETCSmk4A==
 
 typedarray@^0.0.6:
   version "0.0.6"

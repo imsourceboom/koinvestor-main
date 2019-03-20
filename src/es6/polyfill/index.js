@@ -1,4 +1,4 @@
-import polyfill from 'cross-browser-polyfill'
-import './arrayfrom'
+// import polyfill from 'cross-browser-polyfill'
+// import './arrayfrom'
 
-polyfill();
+// polyfill();
