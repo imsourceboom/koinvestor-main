@@ -5,11 +5,11 @@ export const body = {
 }
 
 export const header = {
-    self: doc.querySelector('body  main > header'),
-    logo: doc.querySelector('body main > header figure '),
-    nav: doc.querySelector('body  main > header nav'),
-    li: doc.querySelectorAll('body  main > header nav ul li'),
-    hamburger: doc.querySelector('body  main > header .hamburger'),
+    self: doc.querySelector('body > header'),
+    logo: doc.querySelector('body> header figure '),
+    nav: doc.querySelector('body > header nav'),
+    li: doc.querySelectorAll('body > header nav ul li'),
+    hamburger: doc.querySelector('body > header .hamburger'),
 };
 
 export const intro = {

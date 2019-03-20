@@ -8,7 +8,7 @@ main {
     &.active {
         height: auto;
         overflow: initial;
-        animation: fadeIn 1s both;
+        animation: fadeIn 1s .1s both;
 
         @keyframes fadeIn {
             from {
@@ -22,7 +22,7 @@ main {
         }
     }
 
-    @import './header';
+    // @import './header';
 
     &>section {
         position: relative;
@@ -36,14 +36,14 @@ main {
 
         &#about {
             min-height: 100vh;
-            margin: -50px auto 0;
+            // margin: -50px auto 0;
 
             @media (min-width: 768px) {
-                margin-top: -60px;
+                // margin-top: -60px;
             }
 
             &>article.container {
-                min-height: 100vh;
+                min-height: 100vh !important;
                 padding: 0 1rem !important;
             }
         }
