@@ -88,9 +88,9 @@ for (let i = 100; i < 1000; i += 100) {
 /*
     about section
 */
-sr.reveal('#about .wrap', {
-    delay: 300,
-});
+// sr.reveal('#about .wrap', {
+//     delay: 300,
+// });
 
 
 
