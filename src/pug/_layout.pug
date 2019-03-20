@@ -15,6 +15,8 @@ html(lang="en")
         link(rel="stylesheet", href="/css/main.css")
         script(src="https://polyfill.io/v3/polyfill.min.js?flags=gated" async defer)
 
+        block javascript
+            script(src="/js/app.js" defer)
     body
 
         include layout/intro
@@ -26,5 +28,5 @@ html(lang="en")
 
         include layout/footer
 
-        block javascript
-            script(src="/js/app.js")
+        //- block javascript
+        //-     script(src="/js/app.js")
