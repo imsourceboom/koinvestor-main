@@ -14,7 +14,7 @@ export const header = {
 
 export const intro = {
     self: doc.querySelector('body > article.cover'),
-    typed: doc.querySelector('body > article.cover > .typed'),
+    typed: doc.querySelector('body > article.cover > .logo'),
     arrow: doc.querySelector('body > article.cover .arrow')
 }
 
