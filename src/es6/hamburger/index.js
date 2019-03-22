@@ -12,8 +12,12 @@ const trigger = (e) => {
     nav.classList.toggle('active');
 }
 
-hamburger.addEventListener('click', trigger);
+if (hamburger !== null) {
 
-li.map((i) => {
-    i.addEventListener('click', trigger);
-});
+    hamburger.addEventListener('click', trigger);
+
+    li.map((i) => {
+        i.addEventListener('click', trigger);
+    });
+
+}
