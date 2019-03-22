@@ -8,8 +8,7 @@ import {
 
 
 const bodyEle = body.self;
-const mainEle = main.self;
-const headerEle = header.self;
+
 const aboutEle = about.self;
 const cover = intro.self;
 const typed = intro.typed;
@@ -26,13 +25,19 @@ const hamburger = header.hamburger;
 window.addEventListener('scroll', () => {
 
     let coverNone;
+    const mainEle = main.self;
+    const headerEle = header.self;
     if (cover.style.display !== 'none') {
         typed.classList.add('trigger');
         arrow.classList.add('disappear');
 
         coverNone = setTimeout(() => {
             cover.style.display = 'none';
+
             window.scrollTo(0, 0);
+
+
+
             mainEle.classList.add('active');
             headerEle.classList.add('active');
         }, 1500);
