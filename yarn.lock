@@ -3040,6 +3040,11 @@ gulp-autoprefixer@^6.0.0:
     through2 "^2.0.0"
     vinyl-sourcemaps-apply "^0.2.0"
 
+gulp-hash-filename@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/gulp-hash-filename/-/gulp-hash-filename-2.0.1.tgz#c30656261a9b622d636766e48b8297125b4ddde8"
+  integrity sha512-pMg5owb8Dt0wqjgPx/TFbU3c5ckD16rrgo0BTm9PQ3pVC1Zsgw7AYx1+DP2t31JoUTeN1/dPuXNWnCNvN/wj7A==
+
 gulp-pug@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/gulp-pug/-/gulp-pug-4.0.1.tgz#5c5bb38303a5a565add8b200e292b4a076cf2efa"

@@ -11,6 +11,7 @@ const pug = require('gulp-pug');
 const del = require('del');
 const runSequence = require('run-sequence');
 const sourcemaps = require('gulp-sourcemaps');
+const hash = require('gulp-hash-filename');
 const webpack = require('webpack-stream');
 
 const conf = {
@@ -24,7 +25,7 @@ const conf = {
         },
         sass: {
             src: './src/sass/**/*.scss',
-            build: './build/css'
+            build: './build/css',
         },
         pug: {
             index: './src/pug/index.pug',
@@ -102,6 +103,19 @@ gulp.task('html', [], function () {
         }));
 });
 
+// gulp.task('sass', [], function () {
+//     const sassErrHandler = conf.errorHandler('sass');
+//     gulp.src(conf.paths.sass.src)
+//         .pipe(sourcemaps.init()) // init sourcemaps
+//         .pipe(sass(conf.sass.process).on('error', sassErrHandler))
+//         .pipe(autoprefixer(conf.sass.autoprefixer))
+//         .pipe(sourcemaps.write())
+//         .pipe(gulp.dest(conf.paths.sass.build))
+//         .pipe(browserSync.reload({
+//             stream: true
+//         }));
+// });
+
 gulp.task('sass', [], function () {
     const sassErrHandler = conf.errorHandler('sass');
     gulp.src(conf.paths.sass.src)
@@ -110,10 +124,13 @@ gulp.task('sass', [], function () {
         .pipe(autoprefixer(conf.sass.autoprefixer))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(conf.paths.sass.build))
+        .pipe(hash())
+        .pipe(gulp.dest(conf.paths.sass.build))
         .pipe(browserSync.reload({
             stream: true
         }));
 });
+
 
 gulp.task('js', [], function buildHTML() {
     const jsErrHandler = conf.errorHandler('js');
@@ -122,10 +139,13 @@ gulp.task('js', [], function buildHTML() {
         .pipe(
             webpack({
                 entry: {
-                    app: conf.paths.js.index
+                    app: conf.paths.js.index,
+                    hash: conf.paths.js.index
                 },
                 output: {
-                    filename: '[name].js'
+                    filename: (chunkData) => {
+                        return chunkData.chunk.name === 'app' ? '[name].js' : '[name].[chunkhash].js';
+                    },
                 },
                 module: {
                     rules: [{
