@@ -7,13 +7,9 @@ import {
 } from '../elements';
 
 
-const bodyEle = body.self;
-
-const aboutEle = about.self;
 const cover = intro.self;
 const typed = intro.typed;
 const arrow = intro.arrow;
-
 
 const li = Array.from(header.li);
 const logo = header.logo;
@@ -44,12 +40,11 @@ window.addEventListener('scroll', () => {
 
     } else {
         clearTimeout(coverNone);
-        // window.scrollTo(0, 0);
-        // mainEle.classList.add('active');
-        // headerEle.classList.add('active');
+
         li.map((e) => {
             e.classList.add('reveal');
         })
+
         logo.classList.add('active');
         hamburger.classList.add('active');
     }
