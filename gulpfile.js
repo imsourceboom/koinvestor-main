@@ -103,18 +103,6 @@ gulp.task('html', [], function () {
         }));
 });
 
-// gulp.task('sass', [], function () {
-//     const sassErrHandler = conf.errorHandler('sass');
-//     gulp.src(conf.paths.sass.src)
-//         .pipe(sourcemaps.init()) // init sourcemaps
-//         .pipe(sass(conf.sass.process).on('error', sassErrHandler))
-//         .pipe(autoprefixer(conf.sass.autoprefixer))
-//         .pipe(sourcemaps.write())
-//         .pipe(gulp.dest(conf.paths.sass.build))
-//         .pipe(browserSync.reload({
-//             stream: true
-//         }));
-// });
 
 gulp.task('sass', [], function () {
     const sassErrHandler = conf.errorHandler('sass');
