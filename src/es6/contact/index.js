@@ -8,11 +8,14 @@ const email = contactUs.email;
 const message = contactUs.message;
 const button = contactUs.button;
 
+if (contact !== null) {
 
-contact.addEventListener('keyup', () => {
-    if (name.value.length > 0 && email.value.length > 0 && message.value.length > 0) {
-        button.classList.add('can-send');
-    } else {
-        button.classList.remove('can-send');
-    }
-})
+    contact.addEventListener('keyup', () => {
+        if (name.value.length > 0 && email.value.length > 0 && message.value.length > 0) {
+            button.classList.add('can-send');
+        } else {
+            button.classList.remove('can-send');
+        }
+    });
+
+}
