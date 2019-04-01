@@ -173,6 +173,7 @@ gulp.task('serve', function () {
             baseDir: `${conf.paths.build}`,
             directory: true
         },
+        https: true,
         port: 4000,
         open: true
     });

@@ -1,4 +1,4 @@
-// import './polyfill';
+import './httpTohttps'
 import './intro';
 // import './sticky';
 // import './typed';
