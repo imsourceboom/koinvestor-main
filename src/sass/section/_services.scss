@@ -68,7 +68,9 @@ section#services {
                         }
 
                         &:last-child .box {
-                            padding-left: 10px;
+                            @media (min-width: 768px) {
+                                padding-left: 5px;
+                            }
                         }
 
                         .box {

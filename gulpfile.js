@@ -112,8 +112,8 @@ gulp.task('sass', [], function () {
         .pipe(autoprefixer(conf.sass.autoprefixer))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(conf.paths.sass.build))
-        // .pipe(hash())
-        // .pipe(gulp.dest(conf.paths.sass.build))
+        .pipe(hash())
+        .pipe(gulp.dest(conf.paths.sass.build))
         .pipe(browserSync.reload({
             stream: true
         }));

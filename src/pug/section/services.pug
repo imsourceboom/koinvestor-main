@@ -11,27 +11,31 @@ section#services
                             {
                                 class: 'bitcoin',
                                 name: 'Bitcoin',
-                                img: '/assets/services/bitecoin.svg'
+                                img: '/assets/services/bitecoin.svg',
+                                url: 'https://bitcoin.org/'
                             },
                             {
                                 class: 'ambrosus',
                                 name: 'Ambrosus',
-                                img: '/assets/services/ambrosus.svg'
+                                img: '/assets/services/ambrosus.svg',
+                                url: 'https://ambrosus.com/'
                             },
                             {
                                 class: 'qtum',
                                 name: 'Qtum',
-                                img: '/assets/services/qtum.svg'
+                                img: '/assets/services/qtum.svg',
+                                url: 'https://qtum.org/'
                             },
                             {
                                 class: 'tezos',
                                 name: 'Tezos',
-                                img: '/assets/services/tezos.svg'
+                                img: '/assets/services/tezos.svg',
+                                url: 'https://tezos.com/'
                             },
                         ]
                     each m in mining
                         li
-                            div.box
+                            a.box(href=`${m.url}` target="_blank")
                                 figure
                                     img(src=`${m.img}` alt="" class=`${m.class}`)
                                 p= m.name
