@@ -1,6 +1,7 @@
 {
     "name": "KOINVESTOR",
     "short_name": "KOINVESTOR",
+    "description": "Koinvestor is a global investment firm, specialized in offering disruptive companies access to the accredited and institutional investors, and strategic partners in Asia.",
     "icons": [{
             "src": "/assets/favicons/android-icon-36x36.png",
             "sizes": "36x36",
@@ -36,9 +37,17 @@
             "sizes": "192x192",
             "type": "image/png",
             "density": "4.0"
+        },
+        {
+            "src": "/assets/favicons/android-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "density": "4.0"
         }
     ],
     "start_url": "/",
     "display": "standalone",
-    "orientation": "portrait"
+    "orientation": "portrait",
+    "theme-color": "#ffffff",
+    "background-color": "#ffffff"
 }
