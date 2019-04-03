@@ -3,24 +3,24 @@ main {
     z-index: 1;
     background-color: rgb(255, 255, 255);
     height: 100%;
-    overflow: hidden;
+    // overflow: hidden;
 
-    &.active {
-        height: auto;
-        overflow: initial;
-        animation: fadeIn 1s .1s both;
+    // &.active {
+    //     height: auto;
+    //     overflow: initial;
+    //     animation: fadeIn 1s .1s both;
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
+    //     @keyframes fadeIn {
+    //         from {
+    //             opacity: 0;
+    //         }
 
-            to {
-                opacity: 1;
-            }
+    //         to {
+    //             opacity: 1;
+    //         }
 
-        }
-    }
+    //     }
+    // }
 
     // @import './header';
 

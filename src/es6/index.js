@@ -1,5 +1,5 @@
 import './httpTohttps'
-import './intro';
+// import './intro';
 // import './sticky';
 // import './typed';
 import './smoothscroll';

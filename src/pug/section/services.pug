@@ -73,6 +73,6 @@ section#services
                         ]
                     each a in acc
                         li(class=`${a.class}`)
-                            figure
-                                img(src=`${a.img}`, alt="")
-                            p= a.content
+                            //- figure
+                            //-     img(src=`${a.img}`, alt="")
+                            p(style="padding: 0;")= a.content

@@ -105,7 +105,7 @@ if (mainEl !== null) {
     */
     // profile each
     sr.reveal('#team .profile', {
-        delay: 300,
+        delay: 200,
     });
 
 
@@ -118,7 +118,7 @@ if (mainEl !== null) {
         distance: '50px'
     })
     sr.reveal('#services .mining li', {
-        delay: 300,
+        delay: 200,
         distance: '50px'
     })
     // advisory
@@ -126,7 +126,7 @@ if (mainEl !== null) {
         distance: '50px'
     })
     sr.reveal('#services .advisory li', {
-        delay: 300,
+        delay: 200,
         distance: '50px'
     })
 
@@ -135,7 +135,7 @@ if (mainEl !== null) {
         portfolio section
     */
     sr.reveal('#portfolio li', {
-        delay: 300
+        delay: 200
     })
 
 
@@ -143,7 +143,7 @@ if (mainEl !== null) {
         partners section
     */
     sr.reveal('#partners li', {
-        delay: 300
+        delay: 200
     })
 
 
@@ -152,15 +152,15 @@ if (mainEl !== null) {
         contact section
     */
     sr.reveal('#contact .address', {
-        delay: 300
+        delay: 200
     })
     sr.reveal('#contact input', {
-        delay: 300
+        delay: 200
     })
     sr.reveal('#contact textarea', {
-        delay: 300
+        delay: 200
     })
     sr.reveal('#contact button', {
-        delay: 300
+        delay: 200
     })
 }
