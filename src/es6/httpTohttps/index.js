@@ -1,3 +1,4 @@
-if (window.location.protocol == 'http:') {
-    window.location.href = window.location.href.replace('http:', 'https:');
+if (window.location.protocol == "http:") {
+    var httpsURL = "https://" + window.location.hostname;
+    window.location = httpsURL;
 }
