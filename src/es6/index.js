@@ -1,4 +1,4 @@
-import './httpTohttps'
+import './httpTohttps';
 // import './intro';
 // import './sticky';
 // import './typed';

@@ -24,28 +24,28 @@ if (mainEl !== null) {
     /* 
         Heaer 영역  
     */
-    // // 로고
-    // sr.reveal('main header figure', {
-    //     duration: 1500,
-    //     origin: 'left',
-    //     distance: '30px',
-    //     reset: false
-    // });
-    // // 햄버거
-    // sr.reveal('main header .hamburger', {
-    //     duration: 1500,
-    //     origin: 'right',
-    //     distance: '30px',
-    //     reset: false
-    // });
-    // // nav의 li 요소
-    // for (var i = 100; i < 1000; i += 100) {
-    //     sr.reveal('.delay-' + i, {
-    //         origin: 'top',
-    //         delay: i,
-    //         reset: false
-    //     });
-    // }
+    // 로고
+    sr.reveal('header figure', {
+        duration: 1500,
+        origin: 'left',
+        distance: '30px',
+        reset: false
+    });
+    // 햄버거
+    sr.reveal('header .hamburger', {
+        duration: 1500,
+        origin: 'right',
+        distance: '30px',
+        reset: false
+    });
+    // nav의 li 요소
+    for (var i = 100; i < 1000; i += 100) {
+        sr.reveal('.delay-' + i, {
+            origin: 'top',
+            delay: i,
+            reset: false
+        });
+    }
 
 
     /*
@@ -94,9 +94,9 @@ if (mainEl !== null) {
     /*
         about section
     */
-    // sr.reveal('#about .wrap', {
-    //     delay: 300,
-    // });
+    sr.reveal('#about .wrap', {
+        delay: 300,
+    });
 
 
 
