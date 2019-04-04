@@ -126,6 +126,10 @@ section#services {
                     white-space: nowrap;
                 }
 
+                h1 {
+                    padding-bottom: 1.5rem;
+                }
+
                 ul {
                     display: flex;
                     flex-wrap: wrap;
@@ -133,10 +137,10 @@ section#services {
 
                     li {
                         width: 100%;
-                        height: 80px;
+                        height: 70px;
                         display: flex;
                         align-items: center;
-                        padding-left: 2.5rem;
+                        // padding-left: 2.5rem;
                         // margin-bottom: 1rem;
 
                         @media (max-width: 767px) {
@@ -161,9 +165,9 @@ section#services {
                             }
                         }
 
-                        P {
-                            padding-left: 2rem;
-                        }
+                        // P {
+                        //     padding-left: 2rem;
+                        // }
                     }
                 }
             }
