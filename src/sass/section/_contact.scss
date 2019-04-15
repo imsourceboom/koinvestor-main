@@ -52,24 +52,24 @@ section#contact {
 
                         &[for] {
                             opacity: .5;
-                            -webkit-filter: grayscale(100%);
-                            -moz-filter: grayscale(100%);
-                            -ms-filter: grayscale(100%);
-                            -o-filter: grayscale(100%);
-                            filter: gray;
+                            // -webkit-filter: grayscale(100%);
+                            // -moz-filter: grayscale(100%);
+                            // -ms-filter: grayscale(100%);
+                            // -o-filter: grayscale(100%);
+                            // filter: gray;
                             transition: .5s;
                         }
 
                         &[for="name"] {
-                            background-image: url('https://icongr.am/material/account.svg?size=30&color=0fb9b1');
+                            background-image: url('https://icongr.am/material/account.svg?size=30&color=cacaca');
                         }
 
                         &[for="email"] {
-                            background-image: url('https://icongr.am/material/email.svg?size=30&color=0fb9b1');
+                            background-image: url('https://icongr.am/material/email.svg?size=30&color=cacaca');
                         }
 
                         &[for="message"] {
-                            background-image: url('https://icongr.am/material/lead-pencil.svg?size=30&color=0fb9b1');
+                            background-image: url('https://icongr.am/material/lead-pencil.svg?size=30&color=cacaca');
                         }
                     }
 
@@ -97,11 +97,23 @@ section#contact {
 
                             &+label {
                                 opacity: 1;
-                                -webkit-filter: grayscale(0%);
-                                -moz-filter: grayscale(0%);
-                                -ms-filter: grayscale(0%);
-                                -o-filter: grayscale(0%);
-                                filter: none;
+                                // -webkit-filter: grayscale(0%);
+                                // -moz-filter: grayscale(0%);
+                                // -ms-filter: grayscale(0%);
+                                // -o-filter: grayscale(0%);
+                                // filter: none;
+
+                                &[for="name"] {
+                                    background-image: url('https://icongr.am/material/account.svg?size=30&color=0FB9B1');
+                                }
+
+                                &[for="email"] {
+                                    background-image: url('https://icongr.am/material/email.svg?size=30&color=0FB9B1');
+                                }
+
+                                &[for="message"] {
+                                    background-image: url('https://icongr.am/material/lead-pencil.svg?size=30&color=0FB9B1');
+                                }
                             }
                         }
                     }
