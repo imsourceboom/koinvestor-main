@@ -25,7 +25,7 @@ const conf = {
         },
         sass: {
             src: './src/sass/**/*.scss',
-            build: './build/css',
+            build: './build/css'
         },
         pug: {
             index: './src/pug/index.pug',
@@ -39,8 +39,8 @@ const conf = {
             index: './index.html'
         }
     },
-    errorHandler: function (title) {
-        return function (err) {
+    errorHandler: function(title) {
+        return function(err) {
             gutil.log(gutil.colors.red('[' + title + ']'), err.toString());
             this.emit('end');
         };
@@ -62,11 +62,11 @@ const conf = {
 /**
  *  Default task
  */
-gulp.task('default', function () {
+gulp.task('default', function() {
     runSequence('clean', 'run_source', 'watch', 'serve');
 });
 
-gulp.task('run_source', function () {
+gulp.task('run_source', function() {
     runSequence('pug', 'html', 'sass', 'js');
 });
 
@@ -74,37 +74,46 @@ gulp.task('pug', [], function buildHTML() {
     const pugErrHandler = conf.errorHandler('pug');
     let indexPug = gulp
         .src(conf.paths.pug.index)
-        .pipe(pug({
-            pretty: true
-        }).on('error', pugErrHandler))
+        .pipe(
+            pug({
+                pretty: true
+            }).on('error', pugErrHandler)
+        )
         .pipe(gulp.dest(conf.paths.pug.buildIndex))
-        .pipe(browserSync.reload({
-            stream: true
-        }));
+        .pipe(
+            browserSync.reload({
+                stream: true
+            })
+        );
     let pagesPug = gulp
         .src(conf.paths.pug.pages)
-        .pipe(pug({
-            pretty: true
-        }).on('error', pugErrHandler))
+        .pipe(
+            pug({
+                pretty: true
+            }).on('error', pugErrHandler)
+        )
         .pipe(gulp.dest(conf.paths.pug.buildPages))
-        .pipe(browserSync.reload({
-            stream: true
-        }));
+        .pipe(
+            browserSync.reload({
+                stream: true
+            })
+        );
 
     return merge(indexPug, pagesPug);
 });
 
-gulp.task('html', [], function () {
+gulp.task('html', [], function() {
     return gulp
         .src(conf.paths.html.src)
         .pipe(gulp.dest(conf.paths.html.build))
-        .pipe(browserSync.reload({
-            stream: true
-        }));
+        .pipe(
+            browserSync.reload({
+                stream: true
+            })
+        );
 });
 
-
-gulp.task('sass', [], function () {
+gulp.task('sass', [], function() {
     const sassErrHandler = conf.errorHandler('sass');
     gulp.src(conf.paths.sass.src)
         .pipe(sourcemaps.init()) // init sourcemaps
@@ -114,11 +123,12 @@ gulp.task('sass', [], function () {
         .pipe(gulp.dest(conf.paths.sass.build))
         .pipe(hash())
         .pipe(gulp.dest(conf.paths.sass.build))
-        .pipe(browserSync.reload({
-            stream: true
-        }));
+        .pipe(
+            browserSync.reload({
+                stream: true
+            })
+        );
 });
-
 
 gulp.task('js', [], function buildHTML() {
     const jsErrHandler = conf.errorHandler('js');
@@ -131,31 +141,37 @@ gulp.task('js', [], function buildHTML() {
                     hash: conf.paths.js.index
                 },
                 output: {
-                    filename: (chunkData) => {
-                        return chunkData.chunk.name === 'app' ? '[name].js' : '[name].[chunkhash].js';
-                    },
+                    filename: chunkData => {
+                        return chunkData.chunk.name === 'app'
+                            ? '[name].js'
+                            : '[name].[chunkhash].js';
+                    }
                 },
                 module: {
-                    rules: [{
-                        use: {
-                            loader: 'babel-loader',
-                            options: {
-                                presets: ['@babel/preset-env']
+                    rules: [
+                        {
+                            use: {
+                                loader: 'babel-loader',
+                                options: {
+                                    presets: ['@babel/preset-env']
+                                }
                             }
                         }
-                    }]
+                    ]
                 },
                 devtool: 'source-map',
                 mode: 'production'
             })
         )
         .pipe(gulp.dest(conf.paths.js.build))
-        .pipe(browserSync.reload({
-            stream: true
-        }));
+        .pipe(
+            browserSync.reload({
+                stream: true
+            })
+        );
 });
 
-gulp.task('clean', function () {
+gulp.task('clean', function() {
     del(['./build/index.html']);
     del(['./build/html/**/*']);
     del(['./build/css/**/*']);
@@ -165,7 +181,7 @@ gulp.task('clean', function () {
 /**
  * open local server for livereload
  */
-gulp.task('serve', function () {
+gulp.task('serve', function() {
     browserSync.instance = browserSync.init({
         // startPath: '/html/index.html',
         startPath: conf.paths.html.index,
@@ -182,7 +198,7 @@ gulp.task('serve', function () {
 /**
  * watch source files
  */
-gulp.task('watch', function () {
+gulp.task('watch', function() {
     gulp.watch(path.join(conf.paths.src, '/**/*.pug'), ['pug']);
     gulp.watch(path.join(conf.paths.src, '/**/*.html'), ['html']);
     gulp.watch(
@@ -193,7 +209,7 @@ gulp.task('watch', function () {
     gulp.watch([path.join(conf.paths.src, '/**/*.js')], ['js']);
 });
 
-gulp.task('reload', function () {
+gulp.task('reload', function() {
     browserSync.reload({
         stream: true
     });
