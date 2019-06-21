@@ -78,9 +78,20 @@ header {
                     padding: 0 1rem;
                     font-size: 13px;
 
+                    &#blog {
+                        color: rgb(22, 44, 81);
+                        font-weight: bold;
+
+                        // @media (max-width: 768px) {
+
+                        //     a {
+                        //         opacity: .5;
+                        //     }
+                        // }
+                    }
+
                     &.active {
                         color: rgb(58, 127, 173);
-                        // color: rgb(22, 44, 81);
                     }
 
                     &.reveal {
@@ -116,8 +127,12 @@ header {
                             animation: fadeDown .7s .5s both;
                         }
 
-                        &:last-child {
+                        &:nth-child(6) {
                             animation: fadeDown .7s .6s both;
+                        }
+
+                        &:last-child {
+                            animation: fadeDown .7s .7s both;
                         }
                     }
 
@@ -134,6 +149,10 @@ header {
                             &:hover {
                                 opacity: 1;
                             }
+                        }
+
+                        &#blog a {
+                            opacity: 1;
                         }
 
                         & a::before,
