@@ -17,22 +17,22 @@ header
                             id:'#services',
                             class: 'delay-200'
                         },
-                        {
-                            name:'TEAM',
-                            id:'#team',
-                            class: 'delay-300'
+                        //- {
+                        //-     name:'TEAM',
+                        //-     id:'#team',
+                        //-     class: 'delay-300'
                             
-                        },
+                        //- },
                         {
                             name:'PORTFOLIO',
                             id:'#portfolio',
                             class: 'delay-400'
                         },
-                        {
-                            name:'PARTNERS',
-                            id:'#partners',
-                            class: 'delay-500'
-                        },
+                        //- {
+                        //-     name:'PARTNERS',
+                        //-     id:'#partners',
+                        //-     class: 'delay-500'
+                        //- },
                         {
                             name:'CONTACT US',
                             id:'#contact',
@@ -47,7 +47,7 @@ header
                     ]
                 each m in menu
                     li(class=`${m.class}` id=`${m.styleId}`)
-                        a(href=`${m.id}` target="_blank" data-scroll)= m.name
+                        a(href=`${m.id}` data-scroll)= m.name
         .hamburger.hamburger--squeeze.js-hamburger
             .hamburger-box
                 .hamburger-inner
