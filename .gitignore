@@ -1,0 +1,6 @@
+#develop modules
+node_modules/
+
+.vscode/
+
+src/assets/
