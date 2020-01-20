@@ -5,7 +5,7 @@
     "main": "index.js",
     "author": "imsourceboom",
     "license": "MIT",
-    "private": false,
+    "private": true,
     "scripts": {
         "start": "gulp",
         "dev": "gulp",
